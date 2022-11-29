@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Pets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="10dp"
+        android:text="Pets selling"
+        android:textColor="@color/purple_700"
+        android:textSize="50dp"
+        app:drawableLeftCompat="@drawable/leg">
+
+    </TextView>
+
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchview"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@id/Pets"
+        android:text="search here"
+        android:queryHint="search here"
+        android:iconifiedByDefault="false"
+        >
+    </SearchView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchview"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchview"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/n"></ImageView>
+
+            <TextView
+                android:id="@+id/dog1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dog,Age=10,cost=$50"
+                android:textAlignment="center"
+                android:textColor="@color/teal_200"
+                android:textSize="25dp"
+                android:textStyle="italic">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Place the order"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/b" />
+
+            <TextView
+                android:id="@+id/dog2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dog,Age=13,cost=$100"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="italic">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Place the order"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/k"></ImageView>
+
+            <TextView
+                android:id="@+id/cat"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="cat,Age=2,cost=$50"
+                android:textAlignment="center"
+                android:textColor="@color/teal_200"
+                android:textSize="25dp"
+                android:textStyle="italic">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Place the order"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/c"></ImageView>
+
+            <TextView
+                android:id="@+id/dog3"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Dog,Age=2,cost=$50"
+                android:textAlignment="center"
+                android:textColor="@color/teal_200"
+                android:textSize="25dp"
+                android:textStyle="italic">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Place the order"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/a"></ImageView>
+
+            <TextView
+                android:id="@+id/dog4"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Dog,Age=2,cost=$60"
+                android:textAlignment="center"
+                android:textColor="@color/teal_200"
+                android:textSize="25dp"
+                android:textStyle="italic">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Place the order"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/black"></ImageView>
+
+
+
+
+            <TextView
+                android:id="@+id/dog5"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Dog,Age=10,cost=$150"
+                android:textAlignment="center"
+                android:textColor="@color/teal_200"
+                android:textSize="25dp"
+                android:textStyle="italic">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Place the order"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/e"></ImageView>
+
+            <TextView
+                android:id="@+id/cat2"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Cat,Age=6,cost=$100"
+                android:textAlignment="center"
+                android:textColor="@color/teal_200"
+                android:textSize="25dp"
+                android:textStyle="italic">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Place the order"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/whhite"></ImageView>
+
+            <TextView
+                android:id="@+id/dog6"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Dog,Age=8,cost=$100"
+                android:textAlignment="center"
+                android:textColor="@color/teal_200"
+                android:textSize="25dp"
+                android:textStyle="italic">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Place the order"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/f"></ImageView>
+
+            <TextView
+                android:id="@+id/cat3"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Cat,Age=5,cost=$60"
+                android:textAlignment="center"
+                android:textColor="@color/teal_200"
+                android:textSize="25dp"
+                android:textStyle="italic">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Place the order"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"/>
+
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/j"></ImageView>
+
+            <TextView
+                android:id="@+id/dog7"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Dog,Age=10,cost=$100"
+                android:textAlignment="center"
+                android:textColor="@color/teal_200"
+                android:textSize="25dp"
+                android:textStyle="italic">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/butn6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Place the order"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/h"></ImageView>
+
+            <TextView
+                android:id="@+id/cat5"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Cat,Age=2,cost=$70"
+                android:textAlignment="center"
+                android:textColor="@color/teal_200"
+                android:textSize="25dp"
+                android:textStyle="italic">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/d"></ImageView>
+
+            <TextView
+                android:id="@+id/cat6"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Cat,Age=2,cost=$50"
+                android:textAlignment="center"
+                android:textColor="@color/teal_200"
+                android:textSize="25dp"
+                android:textStyle="italic">
+
+            </TextView>
+
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/m"></ImageView>
+
+            <TextView
+                android:id="@+id/dog8"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Dog,Age=7,cost=$150"
+                android:textAlignment="center"
+                android:textColor="@color/teal_200"
+                android:textSize="25dp"
+                android:textStyle="italic">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/sma"></ImageView>
+
+            <TextView
+                android:id="@+id/dog9"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Dog,Age=7,cost=$100"
+                android:textAlignment="center"
+                android:textColor="@color/teal_200"
+                android:textSize="25dp"
+                android:textStyle="italic"></TextView>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/g"></ImageView>
+
+            <TextView
+                android:id="@+id/cat7"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Cat,Age=1,cost=$50"
+                android:textAlignment="center"
+                android:textColor="@color/teal_200"
+                android:textSize="25dp"
+                android:textStyle="italic">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/i"></ImageView>
+
+            <TextView
+                android:id="@+id/cat8"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Cat,Age=2,cost=$50"
+                android:textAlignment="center"
+                android:textColor="@color/teal_200"
+                android:textSize="25dp"
+                android:textStyle="italic">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/l"></ImageView>
+
+            <TextView
+                android:id="@+id/dog10"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Dog,Age=9,cost=$70"
+                android:textAlignment="center"
+                android:textColor="@color/teal_200"
+                android:textSize="25dp"
+                android:textStyle="italic">
+
+            </TextView>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
